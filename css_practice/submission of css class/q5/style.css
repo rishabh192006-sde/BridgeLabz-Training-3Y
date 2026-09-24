@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: #263238;
+    color: white;
+}
+
+/* Flexbox button layout */
+.button-container {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 8px #0002;
+}
+
+/* Primary button */
+.primary {
+    border: none;
+    background: #1976d2;
+    color: white;
+}
+
+.primary:hover {
+    background: #0d47a1;
+}
+
+.primary:active {
+    transform: scale(0.95);
+}
+
+/* Secondary button */
+.secondary {
+    border: none;
+    background: #455a64;
+    color: white;
+}
+
+.secondary:hover {
+    background: #263238;
+}
+
+/* Outline button */
+.outline {
+    border: 2px solid #1976d2;
+    background: white;
+    color: #1976d2;
+}
+
+.outline:hover {
+    background: #1976d2;
+    color: white;
+}
+
+/* Focus state */
+.btn:focus {
+    outline: 3px solid #90caf9;
+    outline-offset: 3px;
+}
+
+/* Disabled state */
+.btn:disabled {
+    background: #bdbdbd;
+    color: #666;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}

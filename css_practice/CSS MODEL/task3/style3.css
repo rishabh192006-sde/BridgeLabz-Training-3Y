@@ -1,0 +1,65 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #111827;
+    color: white;
+    z-index: 10;
+}
+
+main {
+    padding-top: 80px;
+}
+
+.gradient-section {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+
+.linear {
+    background: linear-gradient(135deg, #2563eb, #9333ea);
+    background-attachment: fixed;
+}
+
+.radial {
+    background: radial-gradient(circle, #f59e0b, #dc2626);
+}
+
+.gradient-section h2 {
+    font-size: 40px;
+}
+
+.gradient-section p {
+    font-size: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #111827;
+    color: white;
+}

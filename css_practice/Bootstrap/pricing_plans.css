@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+}
+
+.pricing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px #0003 !important;
+}

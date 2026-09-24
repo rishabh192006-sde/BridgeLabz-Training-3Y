@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+section {
+    min-height: 60vh;
+    padding: 80px 10%;
+    color: white;
+    text-align: center;
+    border-bottom: 5px solid white;
+}
+
+.history {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    background-attachment: fixed;
+}
+
+.places {
+    background: radial-gradient(circle, #4facfe, #00f2fe);
+    background-attachment: fixed;
+}
+
+.culture {
+    background-color: #6a11cb;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

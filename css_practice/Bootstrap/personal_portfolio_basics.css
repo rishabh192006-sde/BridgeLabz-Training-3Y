@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Custom image size */
+.profile-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Keep paragraph readable */
+.portfolio-text {
+    max-width: 700px;
+}
+
+/* Contact form width */
+.contact-form {
+    max-width: 500px;
+}

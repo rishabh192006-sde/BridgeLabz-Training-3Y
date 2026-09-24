@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Comparison Layout</title>
+    <link rel="stylesheet" href="filter_comparison_layout.css">
+</head>
+<body>
+
+    <header>
+        <h1>Filter Comparison</h1>
+        <p>Compare normal and filtered images</p>
+    </header>
+
+    <main>
+        <section class="comparison">
+
+            <figure class="comparison-item">
+                <img src="https://picsum.photos/id/1015/600/400" alt="Original image">
+                <figcaption>Before - Original Image</figcaption>
+            </figure>
+
+            <figure class="comparison-item">
+                <img class="filtered"
+                     src="https://picsum.photos/id/1015/600/400"
+                     alt="Filtered image">
+                <figcaption>After - Brightness Filter</figcaption>
+            </figure>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Hover over the filtered image to remove the effect.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: #263238;
+    color: white;
+}
+
+/* Flexbox layout */
+.effects {
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.effect-btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    background: #1976d2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px #0003;
+}
+
+/* Hover + transformation */
+.effect-btn:hover {
+    background: #e53935;
+    transform: scale(1.1);
+    box-shadow: 0 7px 15px #0004;
+}
+
+/* Active effect */
+.effect-btn:active {
+    transform: scale(0.95);
+}
+
+/* Focus effect */
+.effect-btn:focus {
+    outline: 3px solid #90caf9;
+    outline-offset: 3px;
+}
+
+/* Link effect */
+.effect-link {
+    padding: 15px 25px;
+    color: #1976d2;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.effect-link:hover {
+    color: #e53935;
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}

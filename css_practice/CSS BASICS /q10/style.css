@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #222;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    min-height: 90vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://picsum.photos/1600/900");
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 50px;
+}
+
+.about {
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about div,
+.about img {
+    width: 50%;
+}
+
+.about img {
+    border: 5px solid #333;
+    outline: 3px solid #888;
+}
+
+.services {
+    padding: 70px 10%;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.service {
+    flex: 1;
+    padding: 40px;
+    border: 2px solid #333;
+    background-color: rgba(0, 123, 255, 0.2);
+    position: relative;
+}
+
+.service::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 15px;
+    height: 15px;
+
+    background-color: red;
+    border-radius: 50%;
+}
+
+.contact {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 12px 30px;
+    background-color: #222;
+    color: white;
+    border: none;
+}
+
+.fixed-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    padding: 15px;
+
+    background-color: #007bff;
+    color: white;
+
+    border-radius: 50%;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about div,
+    .about img {
+        width: 100%;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 35px;
+    }
+}

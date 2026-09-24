@@ -1,0 +1,19 @@
+body {
+    background: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Smooth card hover effect */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px #0003 !important;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}

@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+}
+
+main {
+    min-height: 70vh;
+}
+
+article {
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #0001;
+}

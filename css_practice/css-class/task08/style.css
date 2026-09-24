@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    height: 500px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    height: 30%;
+    background-color: purple;
+    border-bottom: 2px solid black;
+}
+
+.middle {
+    height: 70%;
+    display: flex;
+}
+
+.left {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-box {
+    height: 60%;
+    background-color: cyan;
+    border-bottom: 2px solid black;
+}
+
+.bottom {
+    height: 40%;
+    display: flex;
+}
+
+.bottom div {
+    width: 50%;
+    background-color: lightblue;
+    border-right: 2px solid black;
+}
+
+.right {
+    width: 20%;
+    background-color: lightgray;
+    border-left: 2px solid black;
+}

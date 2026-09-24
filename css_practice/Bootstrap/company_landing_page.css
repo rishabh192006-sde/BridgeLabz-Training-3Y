@@ -1,0 +1,25 @@
+/* Custom styling for the hero section */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+}
+
+.hero h1 {
+    color: #212529;
+}
+
+.hero img {
+    transition: transform 0.3s ease;
+}
+
+.hero img:hover {
+    transform: scale(1.03);
+}

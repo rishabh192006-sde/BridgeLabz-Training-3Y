@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 40px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    width: 300px;
+    min-height: 250px;
+    padding: 25px;
+    margin: 10px;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #555;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.lead {
+    background-color: #fff3cd;
+    border: 3px solid #f0ad4e;
+}
+
+@media (max-width: 600px) {
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+}

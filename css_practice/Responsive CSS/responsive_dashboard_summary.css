@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+/* Main dashboard grid */
+.dashboard {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+/* Header */
+.header {
+    grid-column: 1 / -1;
+    padding: 25px 35px;
+    background: #263238;
+    color: white;
+
+    animation: load 0.8s ease-in-out;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+}
+
+/* Sidebar */
+.sidebar {
+    padding: 25px;
+    background: #37474f;
+    color: white;
+
+    animation: load 0.8s ease-in-out;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.sidebar a:hover {
+    background: #546e7a;
+}
+
+/* Main content */
+.main-content {
+    padding: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* Dashboard cards */
+.dashboard-card {
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #0002;
+
+    animation: load 0.8s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px #0003;
+}
+
+.dashboard-card h2 {
+    margin-top: 0;
+}
+
+.dashboard-card p {
+    line-height: 1.6;
+}
+
+.dashboard-card a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dashboard-card a:hover {
+    text-decoration: underline;
+}
+
+/* Load animation */
+@keyframes load {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tablet and mobile */
+@media (max-width: 750px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+    }
+
+    .header {
+        grid-column: 1;
+    }
+
+    .sidebar {
+        order: 2;
+    }
+
+    .main-content {
+        order: 3;
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+}

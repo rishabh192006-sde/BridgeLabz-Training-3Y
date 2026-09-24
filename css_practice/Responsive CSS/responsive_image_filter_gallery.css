@@ -1,0 +1,96 @@
+/* Apply border-box to all elements */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+/* Page header */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: #263238;
+    color: white;
+}
+
+/* Responsive grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Gallery item */
+.gallery-item {
+    margin: 0;
+    overflow: hidden;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #0002;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 230px;
+    display: block;
+    object-fit: cover;
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+/* Different filters */
+.blur {
+    filter: blur(3px);
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.brightness {
+    filter: brightness(60%);
+}
+
+.contrast {
+    filter: contrast(180%);
+}
+
+.hue {
+    filter: hue-rotate(120deg);
+}
+
+/* Remove filter on hover */
+.gallery-item:hover img {
+    filter: none;
+    transform: scale(1.03);
+}
+
+/* Caption */
+figcaption {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+}

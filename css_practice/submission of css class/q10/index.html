@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini User Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Student Portal</h1>
+        <p>Manage your student information</p>
+    </header>
+
+    <main class="main-container">
+
+        <section class="card">
+
+            <div class="image-section">
+                <img src="https://picsum.photos/200/200" alt="Student Profile">
+            </div>
+
+            <div class="form-section">
+
+                <h2>Student Information</h2>
+
+                <form>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+
+                    <label for="course">Course</label>
+                    <select id="course">
+                        <option>Select Course</option>
+                        <option>Computer Science</option>
+                        <option>Data Science</option>
+                        <option>Information Technology</option>
+                    </select>
+
+                    <div class="buttons">
+                        <button type="submit">Submit</button>
+                        <button type="reset" class="reset">Reset</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Portal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

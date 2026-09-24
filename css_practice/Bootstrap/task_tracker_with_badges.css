@@ -1,0 +1,12 @@
+body {
+    background: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    min-height: 70vh;
+}
+
+.list-group-item {
+    padding: 18px;
+}

@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #111827;
+    color: white;
+}
+
+.demo {
+    min-height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.margin-layer {
+    margin: 30px;
+    padding: 30px;
+    outline: 3px dashed #ef4444;
+}
+
+.border-layer {
+    border: 20px solid #3b82f6;
+    padding: 30px;
+}
+
+.padding-layer {
+    padding: 30px;
+    background-color: #fde68a;
+}
+
+.content-layer {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #86efac;
+    font-weight: bold;
+}
+
+.description {
+    max-width: 350px;
+    line-height: 1.6;
+}
+
+.box-sizing-demo {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+.default-box,
+.border-box {
+    width: 250px;
+    height: 120px;
+    padding: 20px;
+    border: 10px solid #2563eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.default-box {
+    box-sizing: content-box;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111827;
+    color: white;
+}

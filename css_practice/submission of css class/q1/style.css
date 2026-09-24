@@ -1,0 +1,98 @@
+/* Basic page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: #263238;
+    color: white;
+}
+
+/* Flexbox layout */
+.examples {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual example cards */
+.example {
+    width: 220px;
+    min-height: 250px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #0002;
+}
+
+.example h2 {
+    color: #1976d2;
+}
+
+/* :hover pseudo-class */
+.example a {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+.example a:hover {
+    color: #e53935;
+    text-decoration: underline;
+}
+
+/* :focus pseudo-class */
+.example button {
+    padding: 10px 15px;
+    border: 2px solid #1976d2;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+}
+
+.example button:focus {
+    outline: none;
+    background: #1976d2;
+    color: white;
+}
+
+/* :active pseudo-class */
+.active-btn:active {
+    background: #e53935;
+    transform: scale(0.95);
+}
+
+/* :nth-child() pseudo-class */
+.example li {
+    padding: 8px;
+    margin: 4px 0;
+}
+
+.example li:nth-child(even) {
+    background: #e3f2fd;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .examples {
+        flex-direction: column;
+        align-items: center;
+    }
+}

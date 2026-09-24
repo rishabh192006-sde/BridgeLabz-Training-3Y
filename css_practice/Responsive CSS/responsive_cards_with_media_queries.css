@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: #263238;
+    color: white;
+}
+
+/* Four cards in a row */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    width: calc(25% - 19px);
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #0002;
+    transition: background 0.3s ease;
+}
+
+.card:hover {
+    background: #e3f2fd;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tablet - two columns */
+@media (max-width: 900px) {
+    .card {
+        width: calc(50% - 13px);
+    }
+}
+
+/* Mobile - one column */
+@media (max-width: 600px) {
+    .cards {
+        padding: 25px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
